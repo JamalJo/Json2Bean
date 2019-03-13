@@ -1,0 +1,18 @@
+{
+  "name":"jamaljo",
+  "age":123,
+  "other":{
+    "job":"scientest",
+    "hnor":"top1"
+  },
+  "list":[
+    {
+      "sex":"男",
+      "tall":1.7
+    },
+    {
+      "sex":"女",
+      "tall":1.6
+    }
+  ]
+}
