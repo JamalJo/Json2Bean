@@ -35,6 +35,6 @@ public class JavaGenerator implements IGenerator {
         FileUtils.mkdirs(targetPath);
         Writer writer = new OutputStreamWriter(new FileOutputStream(targetPath), "UTF-8");
         template.process(classModel, writer);
-        System.out.println(" ######生成了： "+targetPath);
+        System.out.println(" ######生成了： " + targetPath);
     }
 }

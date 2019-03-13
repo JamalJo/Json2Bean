@@ -18,8 +18,15 @@ import java.util.List;
 public class Entrance {
 
     public static void main(String[] args) {
+//        String[] args = {"-p", "-com.retail.android.bean", "-s", "source.json"};
+
+        // 参数初始化
+        if (!Config.init(args)) {
+            return;
+        }
+
         // json源数据
-        String jsonStr = FileUtils.readFile("source.json");
+        String jsonStr = FileUtils.readFile(Config.SOURCE_JSON_PATH);
 
         // 解析json得到ClassModel链表
         IProcessor processor = new JsonProcessor();
